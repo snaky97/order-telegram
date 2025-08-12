@@ -11,7 +11,7 @@ const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID;
 
 app.use(bodyParser.json());
 
-app.post('/webhook', async (req, res) => {
+app.post('/order-telegram', async (req, res) => {
   try {
     const body = req.body;
 
