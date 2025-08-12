@@ -16,7 +16,7 @@ function escapeMarkdown(text) {
     .replace(/[_*[\]()~`>#+\-=|{}.!]/g, '\\$&');
 }
 
-app.post('/webhook', async (req, res) => {
+app.post('/order-telegram', async (req, res) => {
   try {
     const body = req.body;
 
